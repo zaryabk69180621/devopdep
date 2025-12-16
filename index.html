@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Vanilla Website</h1>
+            <p class="tagline">Pure HTML, CSS & JavaScript</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Vanilla</a>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Our Vanilla Website</h2>
+            <p>This is a completely functional website built with only vanilla HTML, CSS, and JavaScript. No frameworks, no libraries - just the core web technologies.</p>
+            <div class="hero-image">
+                <div class="hero-content">
+                    <h3>Experience Pure Web Development</h3>
+                    <p>Learn how to build modern websites without any dependencies</p>
+                    <button id="ctaButton" class="hero-btn">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>This website demonstrates what you can accomplish with just the fundamental web technologies:</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup for structure and content</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Modern styling with flexbox, grid, and animations</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive functionality without any libraries</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <p>This website includes various interactive elements built with vanilla JavaScript:</p>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-toggle-on"></i>
+                    </div>
+                    <h3>Interactive Navigation</h3>
+                    <p>Mobile-responsive navigation with toggle functionality</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Dynamic Styling</h3>
+                    <p>JavaScript-controlled CSS changes and animations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Live Counter</h3>
+                    <p>Interactive counter with increment/decrement functionality</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section id="demo">
+            <h2>JavaScript Demo</h2>
+            <p>Try out these interactive elements powered by vanilla JavaScript:</p>
+            
+            <div class="demo-area">
+                <h3>Color Changer</h3>
+                <p>Click buttons to change the color of the box below:</p>
+                <div class="color-box" id="colorBox"></div>
+                <div class="controls">
+                    <button class="control-btn" id="redBtn">Red</button>
+                    <button class="control-btn" id="greenBtn">Green</button>
+                    <button class="control-btn" id="blueBtn">Blue</button>
+                    <button class="control-btn" id="randomBtn">Random</button>
+                    <button class="control-btn" id="resetBtn">Reset</button>
+                </div>
+            </div>
+            
+            <div class="demo-area">
+                <h3>Live Counter</h3>
+                <p>Use the buttons to change the counter value:</p>
+                <div class="counter" id="counter">0</div>
+                <div class="counter-btns">
+                    <button class="control-btn" id="decrementBtn">- Decrement</button>
+                    <button class="control-btn" id="incrementBtn">+ Increment</button>
+                    <button class="control-btn" id="clearBtn">Clear</button>
+                </div>
+            </div>
+            
+            <div class="demo-area">
+                <h3>Theme Toggle</h3>
+                <p>Switch between light and dark mode:</p>
+                <button class="control-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i> Toggle Dark Mode
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Send us a message using this form (form validation included):</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                
+                <button type="submit">Send Message</button>
+                <div id="formMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vanilla Website</h3>
+                    <p>Built with pure HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Follow us on social media</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Vanilla Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
