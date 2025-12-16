@@ -1,0 +1,14 @@
+name: lint
+on: 
+  push:
+    branches: [main]
+jobs:
+  linter:
+    name: linter
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: lintperform
+      uses: github/super-linter@v4
+      
